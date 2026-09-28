@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Website giới thiệu bản thân, kỹ năng và các dự án cá nhân.">
+    <meta name="theme-color" content="#eaf6ff">
+
+    <title>Website giới thiệu bản thân</title>
+
+    <!-- Kết nối file CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font chữ từ Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+    <!-- Thanh điều hướng -->
+    <header class="header">
+        <nav class="navbar container" aria-label="Điều hướng chính">
+            <a class="logo" href="#home">My<span>Website.</span></a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Mở menu"
+                aria-expanded="false"
+                aria-controls="navMenu"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-menu" id="navMenu">
+                <a class="nav-link active" href="#home">Trang chủ</a>
+                <a class="nav-link" href="#about">Giới thiệu</a>
+                <a class="nav-link" href="#skills">Kỹ năng</a>
+                <a class="nav-link" href="#projects">Dự án</a>
+                <a class="nav-link" href="#contact">Liên hệ</a>
+
+                <button
+                    class="theme-toggle"
+                    id="themeToggle"
+                    type="button"
+                    aria-label="Chuyển chế độ sáng tối"
+                    title="Chuyển chế độ sáng tối"
+                >
+                    <span id="themeIcon" aria-hidden="true">🌙</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Phần trang chủ -->
+        <section class="hero section" id="home">
+            <div class="container hero-content">
+                <div class="hero-text reveal">
+                    <p class="hello">XIN CHÀO! MÌNH LÀ</p>
+
+                    <h1>
+                        Lý Hoài My
+                        <span class="wave" aria-hidden="true">👋</span>
+                    </h1>
+
+                    <h2>
+                        Mình là
+                        <span class="typing-text" id="typingText">Sinh viên</span>
+                        <span class="typing-cursor" aria-hidden="true">|</span>
+                    </h2>
+
+                    <p class="hero-description">
+                        Chào mừng bạn đến với website cá nhân của mình.
+                        Đây là nơi mình chia sẻ đôi nét về bản thân,
+                        những kỹ năng đang học và các dự án mình thực hiện.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a class="btn btn-primary" href="#about">
+                            Khám phá thêm
+                            <span aria-hidden="true">→</span>
+                        </a>
+
+                        <a class="btn btn-outline" href="#contact">
+                            Liên hệ với mình
+                        </a>
+                    </div>
+
+                    <div class="social-links" aria-label="Mạng xã hội">
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            f
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            ◎
+                        </a>
+                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            git
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-image reveal">
+                    <div class="image-decoration decoration-one"></div>
+                    <div class="image-decoration decoration-two"></div>
+
+                    <div class="avatar-frame">
+                        <img
+                            src="images/avatar.jpg"
+                            alt="Ảnh đại diện của Lý Hoài My"
+                            class="avatar"
+                        >
+                    </div>
+
+                    <div class="floating-card">
+                        <span class="floating-icon" aria-hidden="true">✨</span>
+                        <div>
+                            <strong>Luôn học hỏi</strong>
+                            <small>Không ngừng phát triển</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a class="scroll-down" href="#about" aria-label="Cuộn xuống phần giới thiệu">
+                <span aria-hidden="true">↓</span>
+            </a>
+        </section>
+
+        <!-- Phần giới thiệu -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="section-subtitle">TÌM HIỂU VỀ MÌNH</p>
+                    <h2>Giới thiệu <span>bản thân</span></h2>
+                    <p>
+                        Một chút thông tin để chúng ta hiểu nhau hơn.
+                    </p>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-card reveal">
+                        <div class="about-icon" aria-hidden="true">🌷</div>
+                        <h3>Xin chào, mình là My!</h3>
+                        <p>
+                            Mình yêu thích công nghệ, thiết kế website và
+                            khám phá những điều mới mẻ. Mình đang từng bước
+                            học hỏi, thực hành và hoàn thiện các kỹ năng
+                            của bản thân.
+                        </p>
+                        <p>
+                            Với mình, mỗi thử thách là một cơ hội để trưởng
+                            thành. Mình luôn cố gắng biến những ý tưởng
+                            thành sản phẩm thực tế.
+                        </p>
+                    </div>
+
+                    <div class="info-grid reveal">
+                        <div class="info-card">
+                            <span class="info-icon" aria-hidden="true">👩‍🎓</span>
+                            <div>
+                                <small>Học tập</small>
+                                <strong>Sinh viên</strong>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <span class="info-icon" aria-hidden="true">💻</span>
+                            <div>
+                                <small>Lĩnh vực</small>
+                                <strong>Công nghệ thông tin</strong>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <span class="info-icon" aria-hidden="true">📍</span>
+                            <div>
+                                <small>Quê quán</small>
+                                <strong>Việt Nam</strong>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <span class="info-icon" aria-hidden="true">💌</span>
+                            <div>
+                                <small>Sở thích</small>
+                                <strong>Học hỏi và sáng tạo</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Phần kỹ năng -->
+        <section class="skills section" id="skills">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="section-subtitle">NHỮNG ĐIỀU MÌNH ĐANG HỌC</p>
+                    <h2>Kỹ năng <span>của mình</span></h2>
+                    <p>
+                        Một số kiến thức và công cụ mình đang tìm hiểu,
+                        rèn luyện qua quá trình học tập.
+                    </p>
+                </div>
+
+                <div class="skills-grid">
+                    <article class="skill-card reveal">
+                        <div class="skill-top">
+                            <span class="skill-icon html-icon" aria-hidden="true">5</span>
+                            <span class="skill-level">Cơ bản</span>
+                        </div>
+                        <h3>HTML</h3>
+                        <p>
+                            Tìm hiểu cách xây dựng cấu trúc và nội dung
+                            cho trang web.
+                        </p>
+                        <div class="skill-track">
+                            <span class="skill-progress" style="--progress: 65%"></span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card reveal">
+                        <div class="skill-top">
+                            <span class="skill-icon css-icon" aria-hidden="true">3</span>
+                            <span class="skill-level">Cơ bản</span>
+                        </div>
+                        <h3>CSS</h3>
+                        <p>
+                            Học cách tạo màu sắc, bố cục và thiết kế
+                            giao diện website.
+                        </p>
+                        <div class="skill-track">
+                            <span class="skill-progress" style="--progress: 55%"></span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card reveal">
+                        <div class="skill-top">
+                            <span class="skill-icon js-icon" aria-hidden="true">JS</span>
+                            <span class="skill-level">Đang học</span>
+                        </div>
+                        <h3>JavaScript</h3>
+                        <p>
+                            Làm quen với cách tạo tương tác và xử lý
+                            sự kiện trên trang web.
+                        </p>
+                        <div class="skill-track">
+                            <span class="skill-progress" style="--progress: 35%"></span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card reveal">
+                        <div class="skill-top">
+                            <span class="skill-icon design-icon" aria-hidden="true">✦</span>
+                            <span class="skill-level">Đang rèn luyện</span>
+                        </div>
+                        <h3>Thiết kế giao diện</h3>
+                        <p>
+                            Rèn luyện khả năng phối màu, sắp xếp nội dung
+                            và tạo trải nghiệm dễ sử dụng.
+                        </p>
+                        <div class="skill-track">
+                            <span class="skill-progress" style="--progress: 45%"></span>
+                        </div>
+                    </article>
+                </div>
+
+                <p class="skills-note">
+                    * Các thanh kỹ năng thể hiện mức độ tự đánh giá để phục vụ
+                    mục đích giới thiệu, không phải kết quả kiểm tra chuyên môn.
+                </p>
+            </div>
+        </section>
+
+        <!-- Phần dự án -->
+        <section class="projects section" id="projects">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="section-subtitle">SẢN PHẨM CỦA MÌNH</p>
+                    <h2>Dự án <span>nổi bật</span></h2>
+                    <p>
+                        Một số ý tưởng và sản phẩm mình đang thực hiện
+                        trong quá trình học tập.
+                    </p>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card reveal">
+                        <div class="project-visual project-visual-one">
+                            <span aria-hidden="true">🌐</span>
+                            <small>WEB DESIGN</small>
+                        </div>
+                        <div class="project-info">
+                            <p class="project-category">Thiết kế website</p>
+                            <h3>Website giới thiệu bản thân</h3>
+                            <p>
+                                Một website cá nhân giúp giới thiệu thông tin,
+                                kỹ năng, dự án và cách liên hệ.
+                            </p>
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <a class="project-link" href="#contact">
+                                Tìm hiểu thêm <span aria-hidden="true">↗</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-visual project-visual-two">
+                            <span aria-hidden="true">🛡️</span>
+                            <small>AI PROJECT</small>
+                        </div>
+                        <div class="project-info">
+                            <p class="project-category">Trí tuệ nhân tạo</p>
+                            <h3>Nhận diện người không đội mũ bảo hiểm</h3>
+                            <p>
+                                Ý tưởng ứng dụng thị giác máy tính để nhận diện
+                                tình huống không đội mũ bảo hiểm trong hình ảnh.
+                            </p>
+                            <div class="project-tags">
+                                <span>AI</span>
+                                <span>Computer Vision</span>
+                                <span>Research</span>
+                            </div>
+                            <a class="project-link" href="#contact">
+                                Tìm hiểu thêm <span aria-hidden="true">↗</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-visual project-visual-three">
+                            <span aria-hidden="true">📚</span>
+                            <small>LEARNING</small>
+                        </div>
+                        <div class="project-info">
+                            <p class="project-category">Học tập</p>
+                            <h3>Không gian học tập số</h3>
+                            <p>
+                                Ý tưởng xây dựng một nơi lưu trữ tài liệu,
+                                ghi chú và theo dõi tiến độ học tập.
+                            </p>
+                            <div class="project-tags">
+                                <span>Ý tưởng</span>
+                                <span>Thiết kế</span>
+                                <span>Học tập</span>
+                            </div>
+                            <a class="project-link" href="#contact">
+                                Tìm hiểu thêm <span aria-hidden="true">↗</span>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Phần liên hệ -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="section-subtitle">KẾT NỐI VỚI MÌNH</p>
+                    <h2>Hãy gửi <span>lời nhắn</span></h2>
+                    <p>
+                        Nếu bạn muốn trao đổi hoặc chia sẻ ý tưởng,
+                        hãy để lại lời nhắn nhé!
+                    </p>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-card reveal">
+                        <h3>Thông tin liên hệ</h3>
+                        <p>
+                            Mình luôn sẵn sàng học hỏi, trao đổi kiến thức
+                            và kết nối với mọi người.
+                        </p>
+
+                        <div class="contact-item">
+                            <span aria-hidden="true">📧</span>
+                            <div>
+                                <small>Email</small>
+                                <strong>your-email@example.com</strong>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <span aria-hidden="true">🌐</span>
+                            <div>
+                                <small>Website</small>
+                                <strong>website-gioi-thieu-ban-than</strong>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <span aria-hidden="true">📍</span>
+                            <div>
+                                <small>Địa điểm</small>
+                                <strong>Việt Nam</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form reveal" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Họ và tên</label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Nhập họ và tên"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="example@email.com"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Lời nhắn</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="5"
+                                placeholder="Nhập lời nhắn của bạn..."
+                                required
+                            ></textarea>
+                        </div>
+
+                        <button class="btn btn-primary submit-btn" type="submit">
+                            Gửi lời nhắn <span aria-hidden="true">➤</span>
+                        </button>
+
+                        <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+                        <small class="form-note">
+                            Biểu mẫu hiện chỉ minh họa giao diện, chưa gửi dữ liệu
+                            đến email hoặc máy chủ.
+                        </small>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Chân trang -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <a class="logo footer-logo" href="#home">My<span>Website.</span></a>
+            <p>Được xây dựng bằng sự học hỏi và sáng tạo 💙</p>
+            <p class="copyright">
+                © <span id="currentYear"></span> Lý Hoài My. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Kết nối file JavaScript -->
+    <script src="./js/script.js" defer></script>
+</body>
+</html>
